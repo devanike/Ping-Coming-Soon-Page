@@ -26,7 +26,6 @@ body {
 
 .errorMessage, .successMessage {
     display: block;
-    /* text-align: left; */
     font-size: .7rem;
     font-style: italic;
     margin-bottom: .5rem;
