@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-family: "Libre Franklin", sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.container {
+    padding: 1rem 1.5rem;
+    display: grid;
+    gap: .5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.errorMessage, .successMessage {
+    display: block;
+    /* text-align: left; */
+    font-size: .7rem;
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.successMessage {
+    color: green;
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin-top: .5rem;
+    color:  hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: hsl(209, 33%, 12%);
+    font-weight: 300;
+}
+
+input {
+    outline: none;
+    border: none;
+    display: block;
+    margin: auto;
+    padding: .7rem 1.3rem;
+    border-radius: 5rem;
+    width: 90%;
+    margin-bottom: .5rem;
+    background: none;
+}
+
+input[type=email] {
+    border: 1px solid hsl(223, 100%, 88%);
+}
+
+input[type=button] {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    box-shadow: 0 3px 4px hsl(223, 100%, 88%);
+}
+
+input[type=button]:hover {
+    opacity: .9;
+}
+
+.bold {
+    font-weight: 600;
+    color: #000;
+}
+
+img {
+    width: 100%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+small {
+    font-size: .7rem;
+    color: hsl(0, 0%, 59%);
+    opacity: .6;
+}
+
+.fa {
+    font-size: .7rem;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .4rem;
+    margin-right: .4rem;
+    color: hsl(223, 87%, 63%);
+    margin-bottom: .5rem;
+}
+
+.fa:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* MEDIA QUERIES */
+/* DESKTOP AND TABLETS */
+@media (min-width: 768px)  {
+    .container {
+        width: 50rem;
+        gap: 1.2rem;
+    }
+
+    input {
+        display: inline-block;
+    }
+
+    input[type=email] {
+        width: 40%;
+    }
+
+    input[type=button] {
+        width: 20%;
+    }
+
+    img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #emailForm {
+        position: relative;
+    }
+    
+    .errorMessage, .successMessage {
+        position: absolute;
+        content: '';
+        left: 160px;
+    }
+}
