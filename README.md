@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/responsive-ping-coming-soon-page-using-html-css-and-js-wFzuXFt7VD](https://your-solution-url.com)
+- Solution URL: [https://github.com/devanike/Ping-Coming-Soon-Page](https://your-solution-url.com)
 - Live Site URL: [https://devanike.github.io/Ping-Coming-Soon-Page/](https://your-live-site-url.com)
 
 ## My process
